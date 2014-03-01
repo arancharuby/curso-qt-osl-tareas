@@ -48,10 +48,8 @@ MainWindow::MainWindow(QWidget *parent) :
         ui->tblCateg->insertRow(rowNumber);
         QTableWidgetItem* item = new QTableWidgetItem(GetField(q, "name").toString());
         ui->tblCateg->setItem(rowNumber, 0, item);
-
-        ui->tblCateg->setSortingEnabled(true);
     }
-
+    ui->tblCateg->setSortingEnabled(true);
 }
 
 MainWindow::~MainWindow()
